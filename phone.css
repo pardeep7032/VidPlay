@@ -1,0 +1,302 @@
+.navbar{
+    flex-direction: column;
+}
+.navbar ul{
+    
+    margin: 25px 1px;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.navbar ul li{
+    padding: 1px 8px;
+}
+.navbar ul li a{
+    font-size: .9rem;
+    padding: 0px 5px;
+    margin: 5px 3px;
+}
+
+.search{
+    right: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+.search input,button{
+    padding: 7px 5px;
+    margin: 0px;
+}
+
+
+
+/* notification */
+#notification{
+    
+    flex-direction: column;
+    
+}
+
+    
+#notification p{
+    font-size: .8;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn{
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+.home{
+    
+    flex-direction: column;
+}
+.vertical-menu{
+    flex-direction: row;
+    position: relative;
+}
+.vertical-menu::before{
+    position: absolute;
+    /* width: 14%; */
+}
+.vertical-menu img{
+    width: 39px;
+    height: 39px;
+    margin: 14px 7px;
+}
+.picture{
+    width: 300px;
+    height: 100%;
+    margin: 0px;
+    grid-template-areas: 
+    'first fourth'
+    'third fourth'
+    'second fifth'
+    'second sixth';
+    margin: 30px 10px;
+}
+
+
+/* img are below  */
+#img1{
+    position: relative;
+    grid-area: first;
+    height: 180px;
+    width: 180px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    box-shadow: inset 8px 8px 7px 1px black;  
+}
+#img1::before{
+    content: "";
+    background: url('movie.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#img1:hover{
+    content: "";
+    background: url('movie.jpg') no-repeat center center/cover;
+    
+    height: 180px;
+    width: 180px;
+    top: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+
+#img2{
+    grid-area: second; 
+    width: 180px;
+    height: 375px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    box-shadow: inset 8px 8px 7px 1px black;
+    
+}
+#img2::before{
+    content: "";
+    background: url('Music.jpg') no-repeat center center/cover;
+    position: absolute;
+    
+    width: 180px;
+    height: 375px;
+    
+    z-index: -1;
+    opacity: 0.5;
+}
+#img2:hover{
+    content: "";
+    background: url('Music.jpg') no-repeat center center/cover;
+    
+    width: 180px;
+    height: 375px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}  
+#img3{
+    grid-area: third;
+    width: 180px;
+    height: 180px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    box-shadow: inset 8px 8px 7px 1px black;
+}
+#img3::before{
+    content: "";
+    background: url('programming.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#img3:hover{
+    content: "";
+    background: url('programming.jpg') no-repeat center center/cover;
+    
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#img4{
+    grid-area: fourth;
+    width: 180px;
+    height: 375px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    box-shadow: inset 8px 8px 7px 1px black; 
+}
+#img4::before{
+    content: "";
+    background: url('sport.jpg' ) no-repeat center center/cover;
+    position: absolute; 
+    width: 180px;
+    height: 375px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#img4:hover{
+    content: "";
+    background: url('sport.jpg' ) no-repeat center center/cover;
+    
+    width: 180px;
+    height: 375px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+} 
+#img5{
+    position: relative;
+    grid-area: fifth;
+    height: 180px;
+    width: 180px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    box-shadow: inset 8px 8px 7px 1px black;  
+}
+#img5::before{
+    content: "";
+    background: url('education.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#img5:hover{
+    content: "";
+    background: url('education.jpg') no-repeat center center/cover;
+    
+    height: 180px;
+    width: 180px;
+    top: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#img6{
+    position: relative;
+    grid-area: sixth;
+    height: 180px;
+    width: 180px;
+    border-bottom: 2px solid grey;
+    border-right: 2px solid grey;
+    box-shadow: inset 8px 8px 7px 1px black;  
+}
+#img6::before{
+    content: "";
+    background: url('travel.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#img6:hover{
+    content: "";
+    background: url('travel.jpg') no-repeat center center/cover;
+    
+    height: 180px;
+    width: 180px;
+    top: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+.h-secondary{
+    font-size: 1rem;
+}
+
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 52px 62px;
+    padding-bottom: 15px;
+    margin: 0px;
+}
+
+.welcome p{
+    letter-spacing: 1px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#btn-secondary{
+    display: flex;
+    padding: 28px 0px;
+    margin: 4px -20px;
+}
+#btn-secondary button{
+    padding: 10px 25px;
+    margin: 1px 12px;
+}
+
+
+/* time */
+#times{
+    color: white;
+    font-size: 11px;
+    padding: 11px 0px;
+    margin: 0px -12px;
+    font-style: italic;
+}
